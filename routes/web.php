@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Link;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::livewire('/', 'post.index')->name('index');
 Route::livewire('/artikel/{slug}', 'post.artikel')->name('artikel');
+// Route::livewire('/link/{slug}', 'post.link')->name('link');
+
+Route::get('/link/{slug}', [Link::class, 'render'])->name('link');
+
 
