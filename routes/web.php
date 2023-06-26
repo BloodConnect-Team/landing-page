@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::livewire('/', 'post.index')->name('index');
+Route::livewire('/panduan-pengguna', 'post.userguide')->name('user_guide');
+Route::livewire('/kebijakan-privasi', 'post.privacypolicy')->name('privacy_policy');
 Route::livewire('/artikel/{slug}', 'post.artikel')->name('artikel');
 // Route::livewire('/link/{slug}', 'post.link')->name('link');
 

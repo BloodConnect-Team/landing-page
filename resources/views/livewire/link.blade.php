@@ -4,7 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel Livewire SPA - SantriKoding.com</title>
+    <title>BloodConnect - URGENT!!</title>
+    <meta name="description" content="Dibutuhkan segera donor pengganti dengan golongan darah {{ $data->requests_goldar }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seorang Pasien membutuhkan bantuanmu!!" />
+    <meta property="og:url" content="{{ url()->full() }}" />
+    <meta property="og:site_name" content="Seorang Pasien membutuhkan bantuanmu!!" />
+    <meta property="og:image" content="
+    @if ( $data->requests_goldar == 'A+')
+      {{ asset('assets/media/blood/a_pos.png') }}
+    @elseif($data->requests_goldar == 'B+')
+      {{ asset('assets/media/blood/b_pos.png') }}
+    @elseif($data->requests_goldar == 'AB+')
+      {{ asset('assets/media/blood/ab_pos.png') }}
+    @elseif($data->requests_goldar == 'O+')
+      {{ asset('assets/media/blood/o_pos.png') }}
+    @elseif($data->requests_goldar == 'A-')
+      {{ asset('assets/media/blood/b_neg.png') }}
+    @elseif($data->requests_goldar == 'B-')
+      {{ asset('assets/media/blood/b_neg.png') }}
+    @elseif($data->requests_goldar == 'AB-')
+      {{ asset('assets/media/blood/ab_neg.png') }}
+    @elseif($data->requests_goldar == 'O-')
+      {{ asset('assets/media/blood/o_neg.png') }}
+    @endif
+    " />
+    <link rel="shortcut icon" href="{{ asset('assets/media/logo.png') }}" />
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <livewire:styles/>
@@ -84,7 +111,7 @@
                                         <div class="d-flex flex-stack">
                                           <div class="text-gray-700 fw-semibold fs-6 me-2">Rumah Sakit</div>                   
                                             <div class="d-flex align-items-senter">
-                                              <span class="text-gray-400 fw-bold fs-6"><a href="" class="text-danger">{{ $data->bdrs_nama }}</a></span> 
+                                              <span class="text-gray-400 fw-bold fs-6"><a href="https://www.google.com/maps/search/?api=1&query={{$data->bdrs_lat}},{{$data->bdrs_lng}}" class="text-danger">{{ $data->bdrs_nama }}</a></span> 
                                             </div>  
                                         </div>
                                         <div class="separator separator-dashed my-3"></div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel Livewire SPA - SantriKoding.com</title>
+    @yield('seo')
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <livewire:styles/>
@@ -69,17 +69,17 @@
                 <div class="container">
                     <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
                         <div class="d-flex align-items-center order-2 order-md-1">
-                            <a href="../../demo27/dist/landing.html">
+                            <a href="{{ route('index') }}">
                                 <img alt="Logo" src="{{ asset('assets/media/icon.svg') }}" class="h-15px h-md-20px" />
                             </a>
-                            <span class="mx-5 fs-6 fw-semibold text-light pt-1" href="https://keenthemes.com">2023 &copy; GarisKode Team</span>
+                            <span class="mx-5 fs-6 fw-semibold text-light pt-1" >2023 &copy; GarisKode Team</span>
                         </div>
                         <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
                             <li class="menu-item">
-                                <a href="https://keenthemes.com" target="_blank" class="menu-link px-2 text-gray-300">Panduan Pengguna</a>
+                                <a href="{{ route('user_guide') }}" class="menu-link px-2 text-gray-300">Panduan Pengguna</a>
                             </li>
                             <li class="menu-item mx-5">
-                                <a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2 text-gray-300">Kebijakan Privasi</a>
+                                <a href="{{ route('privacy_policy') }}" class="menu-link px-2 text-gray-300">Kebijakan Privasi</a>
                             </li>
                         </ul>
                     </div>

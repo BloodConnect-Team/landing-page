@@ -1,5 +1,17 @@
-
-    <div class="d-flex flex-column container w-100 min-h-350px min-h-lg-500px px-9">
+@section('seo')
+<title>BloodConnect - Connected For Life</title>
+<meta name="description" content="Satu aplikasi hubungkan orang yang membutuhkan" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="BloodConnect - Connected For Life" />
+<meta property="og:url" content="{{ url()->full() }}" />
+<meta property="og:site_name" content="BloodConnect - Connected For Life" />
+<meta property="og:image" content="http://dashboard.bloodconnect.social/assets/media/banner.png" />
+<link rel="shortcut icon" href="{{ asset('assets/media/logo.png') }}" />
+@endsection
+   
+   <div class="d-flex flex-column container w-100 min-h-350px min-h-lg-500px px-9">
         <div class="mb-5 mb-lg-10 py-10 py-lg-20">
             <h1 class="text-white lh-base fw-bold fs-5x fs-lg-5x mb-0">BloodConnect
             <br />

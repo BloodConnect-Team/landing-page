@@ -30,8 +30,8 @@ class Artikel extends Component
         ->join('users', 'news.user_id', '=', 'users.id')
         ->first();
         $data['newslist'] = DB::table('news')
-        ->where('news.slug', '=', $this->slug)
         ->join('users', 'news.user_id', '=', 'users.id')
+        ->orderBy('news.news_created', 'DESC')
         ->limit(3)
         ->get();
         return view('livewire.artikel', compact('data'));
