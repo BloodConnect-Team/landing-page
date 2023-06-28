@@ -21,7 +21,7 @@
                 -BloodConnect
             </span>
         </p>
-            <a href="../../demo27/dist/index.html">
+            <a href="{{ route('playstore') }}">
                 <img alt="Logo" src="{{ asset('assets/media/playstore.png') }}" class="logo-default h-45px h-lg-50px mt-10" />
             </a>
         </div>

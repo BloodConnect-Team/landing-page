@@ -174,7 +174,7 @@
                       </tr>   
                       <tr>
                           <td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">                                 
-                              <a href="#">
+                              <a href="{{ route('playstore') }}">
                                 <img alt="Logo" src="{{ asset('assets/media/playstore.png') }}" class=" h-40px h-lg-45px" />  
                               </a>                           
                           </td>

@@ -48,7 +48,7 @@
                                 </a>
                             </div>
                             <div class="text-end ms-1">
-                                <a href="../../demo27/dist/authentication/layouts/basic/sign-in.html" class="text-end ">
+                                <a href="{{ route('playstore') }}" class="text-end ">
                                     <img alt="Logo" src="{{ asset('assets/media/playstore.png') }}" class="logo-sticky h-40px h-lg-45px" />
 
                                 </a>

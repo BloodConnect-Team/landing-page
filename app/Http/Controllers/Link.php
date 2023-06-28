@@ -29,4 +29,12 @@ class Link extends Controller
            return redirect()->route('index');
         }
     }
+
+    public function ps()
+    {
+        $data = DB::table('settings')
+        ->where('id', '=', 1)
+        ->first();
+        return redirect()->intended($data->playstore);
+    }
 }

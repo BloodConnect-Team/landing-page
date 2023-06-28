@@ -21,5 +21,6 @@ Route::livewire('/artikel/{slug}', 'post.artikel')->name('artikel');
 // Route::livewire('/link/{slug}', 'post.link')->name('link');
 
 Route::get('/link/{slug}', [Link::class, 'render'])->name('link');
+Route::get('/download', [Link::class, 'ps'])->name('playstore');
 
 

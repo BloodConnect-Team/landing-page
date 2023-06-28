@@ -21,10 +21,10 @@ class Index extends Component
         $data['user'] = DB::table('users')->count();
         $data['kantong'] = DB::table('requests')->sum('requests_jumlah');
         $data['req'] = DB::table('requests')->count();
-
         $data['news'] = DB::table('news')
         ->join('users', 'news.user_id', '=', 'users.id')
         ->get();
         return view('livewire.index', compact('data'));
     }
+
 }
